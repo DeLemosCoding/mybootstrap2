@@ -101,66 +101,67 @@
         <main class="flex-grow-1 d-flex">
             <div class="container d-flex">
                 <div class="row flex-grow-1">
-                    <section class="bg-body pt-3">
+                    <section class="col-md-8 col-lg-9 bg-body pt-3">
+                        <h2>Faça Contato</h2>
+                        <p>Preencha os campos abaixo para entrar em contato com a equipe do site.</p>
 
-                        <!-- Carousel -->
-                        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                        <div style="width:100%; max-width: 500px; margin: auto;">
+                            <div class="w-100 mx-auto" style="max-width: 550px;">
+                                <form action="" method="get" id="contactForm" class="was-validated">
 
-                            <!-- Indicators/dots -->
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#demo" data-bs-slide-to="0"
-                                    class="active bg-light"></button>
-                                <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="bg-light"></button>
-                                <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="bg-light"></button>
-                                <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="bg-light"></button>
-                                <button type="button" data-bs-target="#demo" data-bs-slide-to="4" class="bg-light"></button>
-                            </div>
-
-                            <!-- The slideshow/carousel -->
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <a href="https://google.com" target="_blank"><img src="img/slides/floresta_1.png" alt="Floresta 1" class="d-block w-100"></a>
-                                    <div class="carousel-caption text-light">
-                                        <h3>Floresta 1</h3>
-                                        <p>Floresta florestal florestante resultante de um reflorestamento florestaurial
-                                            da Universidade Federal da Floresta Florestariana</p>
+                                    <div class="form-floating mb-3 mt-3">
+                                        <input type="text" class="form-control" id="contactName" name="name" required
+                                            minlength="2">
+                                        <label for="contactName">Nome:</label>
+                                        <div class="valid-feedback">&nbsp;</div>
+                                        <div class="invalid-feedback">Preencha seu nome.</div>
                                     </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://google.com" target="_blank"><img src="img/slides/floresta_2.png" alt="Floresta 2" class="d-block w-100"></a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://google.com" target="_blank"><img src="img/slides/floresta_3.png" alt="Floresta 3" class="d-block w-100"></a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://google.com"><img src="img/slides/floresta_4.png" alt="Floresta 4" class="d-block w-100"></a>
-                                </div>
-                                <div class="carousel-item">
-                                    <a href="https://google.com"><img src="img/slides/floresta_5.png" alt="Floresta 5" class="d-block w-100"></a>
-                                </div>
-                            </div>
 
-                            <!-- Left and right controls/icons -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#demo"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon"></span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#demo"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </button>
-                        </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="contactEmail" name="email"
+                                            required>
+                                        <label for="contactEmail">E-mail:</label>
+                                        <div class="valid-feedback">&nbsp;</div>
+                                        <div class="invalid-feedback">Preencha seu e-mail.</div>
+                                    </div>
 
-                        <h2>Título</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque obcaecati reprehenderit ipsa
-                            placeat, vitae soluta accusantium dolores rem possimus ut aliquam consectetur ab nobis,
-                            dolore
-                            veniam eligendi iure, facilis voluptates.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis asperiores laborum repellat
-                            iusto, soluta voluptatem distinctio, mollitia quo optio, nostrum impedit inventore quidem
-                            velit
-                            fugiat aperiam quos? Recusandae, ut quo.</p>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="contactSubject" name="subject"
+                                            required minlength="3">
+                                        <label for="contactSubject">Assunto:</label>
+                                        <div class="valid-feedback">&nbsp;</div>
+                                        <div class="invalid-feedback">Preencha o assunto.</div>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="contactMessage" name="message" required
+                                            minlength="4"></textarea>
+                                        <label for="contactMessage">Mensagem:</label>
+                                        <div class="valid-feedback">&nbsp;</div>
+                                        <div class="invalid-feedback">Preencha a mensagem.</div>
+                                    </div>
+
+                                    <div>
+                                        <button type="submit" class="btn btn-primary">Enviar</button>
+                                    </div>
+
+                                </form>
+
                     </section>
+
+                    <aside class="col-md-4 col-lg-3 bg-body-secondary pt-3">
+                        <h3>+ Fale conosco</h3>
+                        <ul class="list-unstyled lh-lg mx-auto">
+                            <li><a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i>
+                                    Facebook</a></li>
+                            <li><a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i>
+                                    Facebook</a></li>
+                            <li><a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i>
+                                    Facebook</a></li>
+                            <li><a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i>
+                                    Facebook</a></li>
+                        </ul>
+                    </aside>
                 </div>
             </div>
         </main>
